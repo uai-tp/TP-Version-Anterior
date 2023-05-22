@@ -1,0 +1,191 @@
+@import url(navbar.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+
+}
+
+#header {
+  text-align: center;
+  background-color: #438FA1;
+  color: brown;
+  padding: 5px 0;
+  display: flex;
+  align-items: center; 
+  text-decoration: underline;
+}
+
+.header-image {
+  margin-right: 10px;
+  width: 20%;
+}
+
+#header h1 {
+  font-size: 55px;
+  margin: 10px auto;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.footer {
+  text-align: center;
+  /*background-color: rgb(127, 255, 176);*/
+  background-color: #438FA1;
+  color: black;
+  font-size: xx-small;
+  font-style: oblique;
+  padding: 8px;
+}
+
+#noticias {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#titulares {
+  flex: 15%;
+  background-color: beige;
+  padding: 10px;
+  font-style: italic;
+}
+
+.titular {
+  padding: 10px;
+  border-bottom: 3px solid orange;
+  color: black;
+  font-style: italic;
+
+}
+
+.titular h3 {
+  font-size: 15px;
+}
+
+.titular img {
+  display: flex;
+  max-width: 100%;
+  margin-top: 5px;
+}
+#mastitulos {
+  margin: 10px 0px;
+  color: black;
+  text-align: center;
+}
+
+#mastitulos h3 {
+  font-style: italic;
+}
+
+#nota_principal {
+  flex: 50%;
+  background-color: #FFE161;
+  padding: 20px;
+}
+#nota_principal img {
+  max-width: 100%;
+  margin: 10px 0px;
+}
+
+#nota_principal h2 {
+  font-size: 32px;
+}
+
+#nota_principal p {
+  font-size: 14px;
+}
+#nota_secundaria {
+  flex: 20%;
+  background-color: beige;
+  padding: 20px;
+}
+
+#nota_secundaria img {
+  max-width: 100%;
+  margin: 10px 0;
+}
+
+#nota_secundaria h3 {
+  font-size: 28px;
+}
+
+#nota_terciaria h3 {
+  font-size: 28px;
+}
+
+#horizontal {
+  margin: 10px;
+  color: aliceblue;
+  background-color:burlywood;
+  
+}
+
+@media screen and (max-width: 935px) {
+  #header h1 {
+    font-size: 40px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  #titulares {
+    display: flex;
+  }
+
+  .titular {
+    border: 0;
+  }
+
+  .titular h3 {
+    font-size: 20px;
+  }
+  #mastitulos {
+    display: none;
+  }
+  #nota_principal h2 {
+    font-size: 28px;
+  }
+  #noticias :nth-child(1) {
+    order: 3;
+  }
+  #noticias :nth-child(2) {
+    order: 1;
+  }
+  #noticias :nth-child(3) {
+    order: 2;
+  }
+}
+
+@media (max-width: 675px) {
+  #nota_principal h2 {
+    font-size: 22px;
+  }
+
+  #nota_principal p {
+    display: none;
+  }
+
+  #nota_secundaria p {
+    display: none;
+  }
+
+  #titulares {
+    display: block;
+  }
+
+  .titular {
+    border-top: 5px solid orange;
+  }
+
+  .titular h3 {
+    font-size: 18px;
+  }
+}
